@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Console Module """
+""" The main Console Module """
 
 import cmd
 import uuid
