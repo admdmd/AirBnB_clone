@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Amenity module"""
+"""This module controls Amenity"""
 from models.base_model import BaseModel
 
 

@@ -1,12 +1,12 @@
 #!/usr/bin/python3
-"""BaseModel module"""
+"""SUper class"""
 import uuid
 import models
 import datetime
 
 
 class BaseModel:
-    """class BaseModel"""
+    """Superclass BaseModel"""
 
     def __init__(self, *args, **kwargs):
         """__init__ method for BaseModel class
@@ -28,23 +28,19 @@ class BaseModel:
             models.storage.new(self)
 
     def __str__(self):
-        """string representation of BaseModel"""
+        """string representation(function) of BaseModel"""
         return "[{}] ({}) {}".format(
             type(self).__name__, self.id, self.__dict__)
 
     def save(self):
-        """save method of BaseModel updates the public instance attribute
+        """save method of BaseModel updates the public instance of attribute
         updated_at with the current datetime
         """
         self.updated_at = datetime.datetime.now()
         models.storage.save()
 
     def to_dict(self):
-        """to_dict method of BaseModel creates dict with all keys/values of
-        __dict__ of the instance
-        Returns:
-            dictionary of instance key-value pairs
-        """
+        """to_dictionary """
         base_dict = dict(self.__dict__)
         base_dict['__class__'] = type(self).__name__
         base_dict['created_at'] = base_dict['created_at'].isoformat()

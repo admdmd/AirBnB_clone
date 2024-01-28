@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""New class inherit from BaseModel"""
+"""A new class inherist from BaseModel"""
 from models.base_model import BaseModel
 
 
