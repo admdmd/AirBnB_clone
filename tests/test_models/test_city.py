@@ -83,5 +83,6 @@ class TestCity(unittest.TestCase):
         self.assertIsNotNone(new_city.created_at)
         self.assertIsNotNone(new_city.updated_at)
 
+
 if __name__ == '__main__':
     unittest.main()

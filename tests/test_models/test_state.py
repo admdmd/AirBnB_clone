@@ -1,4 +1,5 @@
-ttests"""
+#!/usr/bin/python3
+"""State unittests"""
 import unittest
 from models.state import State
 import datetime
@@ -81,6 +82,7 @@ class TestState(unittest.TestCase):
         self.assertIsNotNone(new_state.id)
         self.assertIsNotNone(new_state.created_at)
         self.assertIsNotNone(new_state.updated_at)
+
 
 if __name__ == '__main__':
     unittest.main()

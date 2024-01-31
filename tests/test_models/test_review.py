@@ -87,5 +87,6 @@ class TestReview(unittest.TestCase):
         self.assertIsNotNone(new_review.created_at)
         self.assertIsNotNone(new_review.updated_at)
 
+
 if __name__ == '__main__':
     unittest.main()

@@ -83,5 +83,6 @@ class TestAmenity(unittest.TestCase):
         self.assertIsNotNone(new_amenity.created_at)
         self.assertIsNotNone(new_amenity.updated_at)
 
+
 if __name__ == '__main__':
     unittest.main()

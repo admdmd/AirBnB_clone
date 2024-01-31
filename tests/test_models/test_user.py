@@ -87,5 +87,6 @@ class TestUser(unittest.TestCase):
         self.assertIsNotNone(new_user.created_at)
         self.assertIsNotNone(new_user.updated_at)
 
+
 if __name__ == '__main__':
     unittest.main()

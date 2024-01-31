@@ -79,5 +79,6 @@ class TestBaseModel(unittest.TestCase):
         self.assertIsNotNone(new_base.created_at)
         self.assertIsNotNone(new_base.updated_at)
 
+
 if __name__ == '__main__':
     unittest.main()
