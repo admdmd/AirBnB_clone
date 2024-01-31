@@ -5,10 +5,14 @@ from datetime import datetime
 
 
 class BaseModel():
-    """super class for the Airbnbclone project"""
+    """
+    super class for the Airbnbclone project
+    """
 
     def __init__(self, *args, **kwargs):
-        """Initialises attributes for ID creation and updates"""
+        """
+        Initialises attributes for ID creation and updates
+        """
 
         time_format = '%Y-%m-%dT%H:%M:%S.%f'
         if kwargs:
@@ -30,18 +34,23 @@ class BaseModel():
             models.storage.new(self)
 
     def __str__(self):
-        """output the class name, id, and the dictionary"""
+        """
+        output the class name, id, and the dictionary
+        """
         return f"[{self.__class__.__name__}] ({self.id}) {self.__dict__}"
 
     def save(self):
-        """Instance method to update current datetime,
+        """
+        instance method to update current datetime,
         invoke save and save to serializes file
         """
         self.updated_at = datetime.now()
         models.storage.save()
 
     def to_dict(self):
-        """Return dictionary of basemodel with string formats of times"""
+        """
+        Return dictionary of basemodel with string formats of times
+        """
 
         dic_out = self.__dict__.copy()
         dic_out["__class__"] = self.__class__.__name__
