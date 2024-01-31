@@ -30,5 +30,6 @@ class TestConsole(unittest.TestCase):
         cli = self.create()
         self.assertTrue(cli.onecmd("quit"))
 
+
 if __name__ == '__main__':
     unittest.main()
