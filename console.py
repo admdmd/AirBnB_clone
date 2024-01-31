@@ -170,6 +170,6 @@ def parse(line):
     """converts string to list of tokens"""
     return shlex.split(line)
 
-if __name__ == '__main__':
 
+if __name__ == '__main__':
     HBNBCommand().cmdloop()
