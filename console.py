@@ -5,7 +5,7 @@ import models
 import shlex
 import cmd
 from models.user import User
-from models.basemodel import BaseModel
+from models.base_model import BaseModel
 from models.city import City
 from models.amenity import Amenity
 from models.place import Place
