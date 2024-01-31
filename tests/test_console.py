@@ -5,7 +5,6 @@ import unittest
 from unittest.mock import create_autospec
 from console import HBNBCommand
 
-
 class TestConsole(unittest.TestCase):
     """class TestConsole"""
 
